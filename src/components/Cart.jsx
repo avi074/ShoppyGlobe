@@ -56,8 +56,8 @@ function Cart() {
           ))}
           <Typography
             variant='h4'
-            className='mt-6 border-2 border-black p-2 rounded-xl bg-amber-500 dark:bg-brown-700'>
-            <Link to='/checkout' className='theme-text'>
+            className='mt-6 border-2 lg:col-span-2 border-black p-2 rounded-xl bg-amber-500 dark:bg-brown-700'>
+            <Link to='/checkout' className='text-white font-medium'>
               Proceed to Checkout
             </Link>
           </Typography>
