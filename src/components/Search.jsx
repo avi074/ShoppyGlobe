@@ -1,6 +1,5 @@
 import { Button, Input, Option, Select } from "@material-tailwind/react"
 import { useState } from "react"
-import searchIcon from "../assets/search.svg"
 
 /**
  * @callback searchCallback
@@ -52,13 +51,14 @@ function Search({ category = null, searchHandler }) {
   }
 
   return (
-    <div id='searchBar' className='mx-auto flex items-center gap-0.5 px-1 md:w-10/12 lg:w-3/4 xl:w-3/5'>
+    <div id='searchBar' className='mx-auto col-span-full flex items-center gap-0.5 px-1 md:w-10/12 lg:w-3/4 xl:w-3/5'>
       {categPairs()}
       <Input
         type='text'
         color='blue'
-        label='Search Value'
+        label='Search Products'
         value={searchVal}
+        className="theme-text dark:border-2 font-bold"
         onChange={(e) => {
           setSearchVal(e.target.value)
         }}
@@ -69,10 +69,8 @@ function Search({ category = null, searchHandler }) {
         onClick={() => {
           searchHandler(searchCateg, searchVal)
         }}
-        title='Serach'
-        className='md:min-w-fit px-3 py-2 md:px-6 md:py-3'>
-        <img src={searchIcon} alt='Search' className='w-16 aspect-square md:hidden' />
-        <span className='hidden md:block'>Search</span>
+        className='min-w-24'>
+        Search
       </Button>
     </div>
   )

@@ -1,6 +1,6 @@
 # [ShoppyGlobe - E-Commerce App]()
 
-It's a react-redux E-Commerce app named Shoppy Globe. 
+It's a basic react-redux E-Commerce application named `ShoppyGlobe`. 
 
 ## Prerequisites
 
